@@ -10,7 +10,7 @@ function App() {
 
   const signIn = async () => {
     const provider = new firebase.auth.GoogleAuthProvider();
-    await auth.signInWithPopup(provider);
+    await auth.signInWithPopup(provider).catch((error) => alert(error.message));
   };
 
   const signOut = async () => {
@@ -28,8 +28,10 @@ function App() {
       <div>
         {user ? (
           <>
-            <button onClick={signOut} className="signout">sign out</button>
-            
+            <button onClick={signOut} className="signout">
+              sign out
+            </button>
+
             <Chat />
           </>
         ) : (

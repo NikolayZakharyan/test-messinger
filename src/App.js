@@ -35,7 +35,7 @@ function App() {
             <Chat />
           </>
         ) : (
-          <button onClick={signIn}>login with google</button>
+          <button onClick={signIn} className="signIn">login with google</button>
         )}
       </div>
     </div>

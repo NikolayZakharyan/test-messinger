@@ -4,6 +4,9 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import SingleMsg from '../components/SingleMsg';
 
+
+
+
 function Chat() {
   const messagesEndRef = useRef(null);
   const inputEl = useRef(null);

@@ -1,6 +1,18 @@
 import React from 'react';
 
-function SingleMsg({ id, name, msgTime, message, owner, i }) {
+/**
+ * 
+ * @param {string} name 
+ * @param {string} msgTime 
+ * @param {string} message
+ * @param {number} i 
+ * @param {boolean} owner 
+ * 
+ * 
+ * @returns {SingleMsg} HTML
+ */
+
+function SingleMsg({  name, msgTime, message, owner, i }) {
 
   return (
     <div className={`container ${owner ? 'darker' : ''}`} key={i}>
